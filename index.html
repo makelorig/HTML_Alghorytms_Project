@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorythm_Project</title>
+    <!-- <link rel="stylesheet" href="assets/styles/style.css"/>-->
+</head>
+<body>
+    <header>
+        <h1>Я вас приветствую на сайте-визитке!</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#joke">Анекдот</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>Обо мне:</h2>
+            <p>Меня зовут <em>Кузнецов Николай Евгеньевич</em>, я <b>начинающий програмист</b>.</p>
+        </section>
+
+        <section>
+            <h2>Мои достижения:</h2>
+            <article>
+                <ul>
+                    <li>Я родился!</li>
+                </ul>
+            </article>
+        </section>
+
+        <aside id="joke">
+            <h2><del><sup>Не очень смешной</sup></del> Анекдот:</h2>
+            <p><em>Почему вампиры всегда врут и недоговаривают?</em> --- <b> Они не могут по чесноку.</b><sub> Конец Анекдота</sub></p>
+        </aside>
+
+    <section>
+        <h2>Псевдографик из символов ASCII:</h2>
+        <pre>
+    #     #                  ######                                           
+    ##    # ###### #    #    #     # #####   ####       # ######  ####  ##### 
+    # #   # #      #    #    #     # #    # #    #      # #      #    #   #   
+    #  #  # #####  #    #    ######  #    # #    #      # #####  #        #   
+    #   # # #      # ## #    #       #####  #    #      # #      #        #   
+    #    ## #      ##  ##    #       #   #  #    # #    # #      #    #   #   
+    #     # ###### #    #    #       #    #  ####   ####  ######  ####    # 
+        </pre>
+    </section>
+
+ <section>
+    <h2>Сниппет кода:</h2>
+        
+<code>
+    <pre>
+    void BubbleSort(int[] bS)
+    {
+        for (int i = 0; i < bS.Length; i++)
+        {
+            for (int j = i; j < bS.Length; j++)
+            {
+                if (bS[j] < bS[i])
+                {
+                    int temp = bS[i];
+                    bS[i] = bS[j];
+                    bS[j] = temp;
+                }
+            }
+        }
+    }
+    </pre>
+        </code>
+    </section>
+</main>
+
+    <footer>
+        <p>Тут находится футер, в будущем информация о нём дополнится.</p>
+    </footer>
+</body>
+</html>
