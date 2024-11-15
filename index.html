@@ -4,42 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Algorythm_Project</title>
-    <!-- <link rel="stylesheet" href="assets/styles/style.css"/>-->
+     <link rel="stylesheet" href="assets/styles/style.css"/>
 </head>
-<body>
-    <header>
-        <h1>Я вас приветствую на сайте-визитке!</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">Обо мне</a></li>
-                <li><a href="#joke">Анекдот</a></li>
+<body class="body">
+    <header class="header">
+        <h1 class="header__title">Я вас приветствую на сайте-визитке!</h1>
+        <nav class="header__nav">
+            <ul class="header__nav ul">
+                <li class="header__nav-item"><a href="#about" class="header__nav-link">Обо мне</a></li>
+                <li class="header__nav-item"><a href="#joke" class="header__nav-link">Анекдот</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main class="main">
         <section id="about">
-            <h2>Обо мне:</h2>
-            <p>Меня зовут <em>Кузнецов Николай Евгеньевич</em>, я <b>начинающий програмист</b>.</p>
+            <h2 class="about__title">Обо мне:</h2>
+            <p>Меня зовут <em class="about__name">Алексей Митько</em>, я <b class="about__programmer">начинающий програмист</b>.</p>
+        </section>
+        
+        <section class="gallery">
+            <h2 class="gallery__title">Галерея изображений:</h2>
+            <div class="gallery__item">
+                <img src="https://puzzleit.ru/files/puzzles/110/109704/_original.jpg" class="gallery__image">
+            </div>
+            <div class="gallery__item">
+                <img src="https://yaso.su/HTMLProjectAlgorytmImage1" class="gallery__image">
+            </div>
+            <div class="gallery__item">
+                <img src="https://yaso.su/HTMLProjectAlgorytmImage" class="gallery__image"><!--HTMLProjectAlgorytmImage-->
+            </div>
         </section>
 
-        <section>
-            <h2>Мои достижения:</h2>
+        <section class="achievements">
+            <h2 class="achievements__title">Мои достижения:</h2>
             <article>
-                <ul>
+                <ul class="achievements__list">
                     <li>Я родился!</li>
                 </ul>
             </article>
         </section>
 
         <aside id="joke">
-            <h2><del><sup>Не очень смешной</sup></del> Анекдот:</h2>
-            <p><em>Почему вампиры всегда врут и недоговаривают?</em> --- <b> Они не могут по чесноку.</b><sub> Конец Анекдота</sub></p>
+            <h2 class="joke__title"><del class="joke__upperText"><sup>Не очень смешной</sup></del> Анекдот:</h2>
+            <p><em>Почему вампиры всегда врут и недоговаривают?</em> --- <b class="joke__punchline"> Они не могут по чесноку.</b><sub> Конец Анекдота</sub></p>
         </aside>
 
-    <section>
-        <h2>Псевдографик из символов ASCII:</h2>
-        <pre>
+    <section class ="ASCII">
+        <h2 class="ASCII__title">Псевдографик из символов ASCII:</h2>
+        <pre class="ASCII pre">
     #     #                  ######                                           
     ##    # ###### #    #    #     # #####   ####       # ######  ####  ##### 
     # #   # #      #    #    #     # #    # #    #      # #      #    #   #   
@@ -50,8 +63,8 @@
         </pre>
     </section>
 
- <section>
-    <h2>Сниппет кода:</h2>
+ <section  class="code">
+    <h2 class="code__title">Сниппет кода:</h2>
         
 <code>
     <pre>
@@ -74,9 +87,22 @@
         </code>
     </section>
 </main>
+<footer class="footer">
+    <div class="footer__contacts">
+        <p>Адрес: улица Митько, г. Ростов-на-Дону, Россия</p>
+        <p>Телефон: +7 (800) 555-3535</p>
+        <p>Email: lelikmjtko@gmail.com</p>
+    </div>
 
-    <footer>
-        <p>Тут находится футер, в будущем информация о нём дополнится.</p>
-    </footer>
+    <div class="footer__links">
+        <a href="#about">О мне</a> |
+        <a href="#joke">Анекдот</a>
+    </div>
+    <div class="footer__social">
+        <a href="https://vk.com">Vk</a>
+    </div>
+
+    <p class="footer__copyright">© 2024-2025 makelorig. У меня нет прав, чтобы их защищать.</p>
+</footer>
 </body>
 </html>
