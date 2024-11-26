@@ -5,12 +5,11 @@
     font-family: 'Roboto', sans-serif;
 }
 
-body {
+.body {
     background-color: #f4f4f9;
     color: #333;
     font-size: 16px;
     line-height: 1.5;
-    padding: 20px;
 }
 .header {
     position: fixed;
@@ -52,6 +51,7 @@ body {
     font-weight: 700;
 }
 .main {
+    padding: 20px;
     padding-top: 120px;
     display: flex;
     flex-direction: column;
@@ -59,8 +59,6 @@ body {
     background-color: #ffffff;
 
 }
-
-
 #about {
     background-color: #e0f7fa;
     padding: 15px;
@@ -175,6 +173,9 @@ body {
 }
 
 @media screen and (max-width: 576px) {
+    .header{
+        position: sticky;
+    }
     .gallery__item {
         flex: 1 1 100%;
     }
@@ -189,7 +190,7 @@ body {
     }
 }
  
-.about__title, .achievements__title, .joke__title, .code__title,.ASCII__title, .gallery__title,.table__title {
+.title__text {
     font-size: 1.5rem;
     margin-bottom: 10px;
     text-align: center;
@@ -201,36 +202,13 @@ body {
 font-style: italic;
     color: #ff5722;
 }  
-.about__programmer{
-font-weight: bold;
-    color: #1e88e5;
-}
-.joke__punchline{
+.text__highlight{
     font-weight: bold;
     color: #1e88e5;
-
 }
 .joke__upperText{
     text-decoration: line-through;
 }
-.ASCII{
-    flex-direction:column;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border: 2px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 20px 0;
-    width: max-content;
-}
-.ASCII pre {
-    font-family: 'Comic Sans', Courier, monospace;
-    line-height: 1.2;
-    color: #333;
-    overflow-x: auto;
-}
-
-
 #table-section {
     margin: 20px 0;
     padding: 16px;
