@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorythm_Project</title>
+    <link rel="stylesheet" href="assets/styles/style.css"/>
+    <script src="js/webform.js" defer></script>
+</head>
+    <header class="header">
+        <h1 class="header__title">Я вас приветствую на сайте-визитке!</h1>
+        <nav class="header__nav">
+            <ul class="header__nav">
+                <li class="header__nav-item"><a href="joke.html" class="header__nav-link">Анекдот</a></li>
+                <li class="header__nav-item"><a href="index.html" class="header__nav-link">Домой</a></li>
+                <li class="header__nav-item"><a href="gallery.html" class="header__nav-link">Галерея</a></li>
+            </ul>
+        </nav>
+    </header>
+    <body class="body">
+        <main class="main">
+            <div class="tableSite">
+            <section>
+                <form id="tableForm">
+                    <label>
+                        Количество дней:
+                        <select id="days">
+                            <option value="5">5-дневная неделя</option>
+                            <option value="6">6-дневная неделя</option>
+                        </select>
+                    </label>
+    
+                    <label>
+                        Количество занятий в день:
+                        <input type="number" id="lessons" min="1" max="10" value="5" required>
+                    </label>
+    
+                    <label>
+                        Язык таблицы:
+                        <select id="language">
+                            <option value="ru">Русский</option>
+                            <option value="en">Английский</option>
+                        </select>
+                    </label>
+    
+                    <button type="submit">Создать таблицу</button>
+                    <button type="button" id="saveConfig">Сохранить настройки</button>
+                    <button type="button" id="loadConfig">Загрузить настройки</button>
+                </form>
+            </section>
+    
+            <section>
+                <div id="resultContainer"></div>
+            </section>
+        </div>
+        </main>
+    <footer class="footer">
+        <div class="footer__contacts">
+            <p>Адрес: улица Митько, г. Ростов-на-Дону, Россия</p>
+            <p>Телефон: +7 (800) 555-3535</p>
+            <p>Email: lelikmjtko@gmail.com</p>
+        </div>
+    
+        <div class="footer__links">
+            <a href="gallery.html">Галлеря</a>
+            <a href="Joke.html">Анекдот</a>
+            <a href="form.html">Расписание</a>
+        </div>
+        <div class="footer__social">
+            <a href="https://vk.com">Vk</a>
+        </div>
+        <p class="footer__copyright">© 2024-2025 makelorig. У меня нет прав, чтобы их защищать.</p>
+        <p class="footer__advert">Рекламный баннер!!!</p>
+    </footer>
+</body>
+</html>
